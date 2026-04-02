@@ -1,43 +1,148 @@
-# Astro Starter Kit: Minimal
+![Banner](readme/image.png)
 
-```sh
-npm create astro@latest -- --template minimal
-```
+> [!WARNING]
+> Dit project werkt alleen op chrome doormiddel van het lokale AI model van Chrome
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Leerdoelen bij deze opdracht
 
-## 🚀 Project Structure
+- [Leerdoel 1]
+    - [Beschrijving van wat je wilt leren en bouwen]
+    - *Reden: [Waarom is dit belangrijk voor je ontwikkeling?]*
 
-Inside of your Astro project, you'll see the following folders and files:
+- [Leerdoel 2]
+    - [Beschrijving van wat je wilt leren en bouwen]
+    - *Reden: [Waarom is dit belangrijk voor je ontwikkeling?]*
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## Week 1
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+### Dag 1
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+#### Wat heb ik gedaan vandaag?
 
-Any static assets, like images, can be placed in the `public/` directory.
+| Activiteit | Duur |
+|------------|------|
+| Introductie Astro | 2 uur |
+| Brainstormen over het project | 2 uur |
+| Basis gemaakt aan styling | 1 uur |
+| Map gemaakt| 1 uur |
+| Pauze | 1 uur |
 
-## 🧞 Commands
+#### Wat heb ik geleerd?
 
-All commands are run from the root of the project, from a terminal:
+* Hoe astro werkt
+* Server side rendering
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+![Afbeelding van de wesbite van dag1](readmeImages/dag1.png)
 
-## 👀 Want to learn more?
+#### Wat ga ik morgen doen?
+- [x] Feedback krijgen
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+### Week 1 recap
+
+#### Wat heb ik deze week gedaan?
+[Korte samenvatting van de week]
+
+#### Belangrijkste leerpunten
+* [Punt 1]
+* [Punt 2]
+
+---
+
+## Week 2
+
+### Dag 1
+
+#### Wat heb ik gedaan vandaag?
+
+| Activiteit | Duur |
+|------------|------|
+| [Activiteit] | [Tijd] |
+
+#### Wat heb ik geleerd?
+
+* [Leerpunt]
+
+#### Wat ga ik morgen doen?
+- [ ] [Plan]
+
+### Dag 2
+
+#### Wat heb ik geleerd?
+
+* [Leerpunt]
+
+### Week 2 recap
+
+#### Wat heb ik deze week gedaan?
+[Korte samenvatting van de week]
+
+#### Belangrijkste leerpunten
+* [Punt]
+
+---
+
+## Week 3 
+
+### Dag 1
+
+| Activiteit | Duur |
+|------------|------|
+| [Activiteit] | [Tijd] |
+
+#### Wat heb ik geleerd?
+
+* [Leerpunt]
+
+#### Wat ga ik morgen doen?
+- [ ] [Plan]
+
+### Dag 2
+
+| Activiteit | Duur |
+|------------|------|
+| [Activiteit] | [Tijd] |
+
+#### Wat heb ik geleerd?
+
+* [Leerpunt]
+
+#### Wat ga ik morgen doen?
+- [ ] [Plan]
+
+### Week 3 recap
+
+#### Belangrijkste leerpunten
+* [Punt]
+
+---
+
+## Week 4 
+
+### Dag 1
+
+| Activiteit | Duur |
+|------------|------|
+| [Activiteit] | [Tijd] |
+
+### Eindreflectie
+
+[Hier komt je eindreflectie. Wat heb je geleerd? Wat ging soepel? Wat was moeilijk?]
+
+[Afbeelding van het eindresultaat]
+
+---
+
+## Bronnen en AI-verantwoording
+
+### Externe bronnen
+- [Bron 1]
+- [Bron 2]
+
+### AI-gebruik
+- [AI tool (bijv. GitHub Copilot, ChatGPT)]
+
+### Verantwoording AI-gebruik
+[Leg hier uit hoe en waarom je AI hebt gebruikt tijdens dit project.]
+- [Punt 1]
+- [Punt 2]
+- [Punt 3]

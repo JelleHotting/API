@@ -1,17 +1,71 @@
 ---
+const url = `https://newsapi.org/v2/top-headlines?language=en&pageSize=20&apiKey=${import.meta.env.NEWS_API_KEY}`;
 
+let response = await fetch(url);
+let data = await response.json();
+const articles = data.articles || [];
+
+// console.log(articles);
 ---
 
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📡</text></svg>">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Locus</title>
+
+    <link rel="stylesheet" href="/src/styles/global.css" />
+
+    <!-- Leaflet CSS -->
+    <!-- Bron https://leafletjs.com/examples.html -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+  </head>
+  <body>
+    <div id="map"></div>
+
+    <aside class="news-sidebar">
+      <h1>Nieuws feed</h1>
+      <div class="news-list">
+        {
+          articles.map((article) => (
+            <div class="news-item">
+              <span class="news-title">{article.title}</span>
+            </div>
+          ))
+        }
+      </div>
+    </aside>
+
+    <!-- Leaflet JS -->
+    <!-- Bron https://leaflet-extras.github.io/leaflet-providers/preview/#filter=CartoDB.DarkMatter -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""></script>
+
+    <script is:inline>
+      document.addEventListener("DOMContentLoaded", () => {
+        const map = L.map("map", {
+          zoomControl: true,
+          attributionControl: false,
+        }).setView([1, 1], 2);
+
+        L.tileLayer(
+          "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+          {
+            subdomains: "abcd",
+            maxZoom: 20,
+          },
+        ).addTo(map);
+      });
+    </script>
+  </body>
 </html>
