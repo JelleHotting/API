@@ -40,11 +40,12 @@
 ### Week 1 recap
 
 #### Wat heb ik deze week gedaan?
-[Korte samenvatting van de week]
+Ik heb deze week feedback gekregene op mijn idee, het is een goed idee.
 
 #### Belangrijkste leerpunten
-* [Punt 1]
-* [Punt 2]
+* APIs werken met een limiet
+* Hoe je een .env file opbouwt
+* Hoe ASTRO te installen
 
 ---
 
@@ -56,14 +57,20 @@
 
 | Activiteit | Duur |
 |------------|------|
-| [Activiteit] | [Tijd] |
+| JS herstructureren (inline naar aparte bestanden) | 1 uur |
+| Chrome AI (Gemini Nano) integratie voor locaties | 2 uur |
+| Prompt engineering voor nauwkeurigheid & US/Global | 1 uur |
+| Leaflet map configuratie (scrollen & visualisaties) | 1 uur |
+| API request throttling implementeren (1u interval) | 0.5 uur |
 
 #### Wat heb ik geleerd?
 
-* [Leerpunt]
+* Werken met Chrome's lokale `window.ai` voor on-device tekstverwerking.
+* Hoe je Prompt engineering inzet om specifieke coördinaten uit tekst te halen.
+* Leaflet map instellingen finetunen voor betere interactie (horizontal scrolling).
 
 #### Wat ga ik morgen doen?
-- [ ] [Plan]
+- [ ] De news feed visuele upgrades geven (kaartjes, animaties).
 
 ### Dag 2
 
@@ -139,10 +146,8 @@
 - [Bron 2]
 
 ### AI-gebruik
-- [AI tool (bijv. GitHub Copilot, ChatGPT)]
+- Antigravity (Google DeepMind)
 
 ### Verantwoording AI-gebruik
-[Leg hier uit hoe en waarom je AI hebt gebruikt tijdens dit project.]
-- [Punt 1]
-- [Punt 2]
-- [Punt 3]
+
+- **Antigravity (Google DeepMind):** Heeft geholpen bij de architectuur, het refactoren van de codebase naar aparte modules, en het oplossen van Leaflet visualisatie problemen.

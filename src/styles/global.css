@@ -70,6 +70,124 @@ html {
 .news-list {
   display: flex;
   flex-direction: column;
-  gap: 1em;
-  overflow: auto;
+  gap: 1.5rem;
+  overflow-y: auto;
+  padding-right: 0.5rem;
 }
+
+.news-list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.news-list::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 2px;
+}
+
+.news-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform 0.2s ease;
+}
+
+
+
+.news-title {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.location-tag {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--primary);
+}
+
+.status-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #333;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.status-dot.active {
+  background-color: var(--primary);
+  box-shadow: 0 0 8px var(--primary);
+  animation: scan-pulse 1s infinite alternate;
+}
+
+.status-dot.completed {
+  background-color: var(--primary);
+  box-shadow: 0 0 4px var(--primary);
+}
+
+@keyframes scan-pulse {
+  from { opacity: 0.4; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1.2); }
+}
+
+/* --- Leaflet Control Overrides --- */
+.leaflet-bar {
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  margin-top: 20px !important;
+  margin-left: 20px !important;
+  display: flex !important;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.leaflet-bar a,
+.leaflet-bar a:hover {
+  background: var(--surface-glass) !important;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 255, 65, 0.2) !important; /* Low opacity primary */
+  border-radius: 0 !important;
+  color: var(--primary) !important;
+  width: 40px !important;
+  height: 40px !important;
+  line-height: 40px !important;
+  font-family: var(--font-tech) !important;
+  font-size: 1.2rem !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.leaflet-control-zoom-in {
+  /* Separator fix */
+  border-bottom: 1px solid rgba(0, 255, 65, 0.2) !important;
+}
+
+/* --- Radar Pulse Animation --- */
+.radar-pulse {
+  pointer-events: none;
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: pulse-ring 3s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.5);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+

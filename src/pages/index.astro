@@ -1,18 +1,18 @@
 ---
-const url = `https://newsapi.org/v2/top-headlines?language=en&pageSize=20&apiKey=${import.meta.env.NEWS_API_KEY}`;
+// Bron: Google. (2026, April 8). Antigravity [AI coding assistant]. Sessie met prompt: "zorg dat er maar eens per uur nieuwe artikelen worden gevraagd". Conversatie ID: 053cd16d-9d7e-4f1f-b62b-8e8e04d8cb3d.
+import { getCachedArticles } from '../utils/news.js';
 
-let response = await fetch(url);
-let data = await response.json();
-const articles = data.articles || [];
-
-// console.log(articles);
+const articles = await getCachedArticles();
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📡</text></svg>">
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📡</text></svg>"
+    />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>Locus</title>
@@ -29,19 +29,30 @@ const articles = data.articles || [];
     />
   </head>
   <body>
+	
     <div id="map"></div>
 
     <aside class="news-sidebar">
       <h1>Nieuws feed</h1>
-      <div class="news-list">
+      <div class="news-list" id="news-list">
         {
-          articles.map((article) => (
+          articles.map((article, index) => (
             <div class="news-item">
-              <span class="news-title">{article.title}</span>
+              <div class="news-title">{article.title}</div>
+              <div class="location-tag">
+                <span class="status-dot" />
+                <span class="location-text">Scanning...</span>
+              </div>
             </div>
           ))
         }
       </div>
+
+      <script
+        id="news-data"
+        type="application/json"
+        set:html={JSON.stringify(articles)}
+      />
     </aside>
 
     <!-- Leaflet JS -->
@@ -50,22 +61,7 @@ const articles = data.articles || [];
       src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
       integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
       crossorigin=""></script>
+    <script src="../scripts/main.js"></script>
 
-    <script is:inline>
-      document.addEventListener("DOMContentLoaded", () => {
-        const map = L.map("map", {
-          zoomControl: true,
-          attributionControl: false,
-        }).setView([1, 1], 2);
-
-        L.tileLayer(
-          "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
-          {
-            subdomains: "abcd",
-            maxZoom: 20,
-          },
-        ).addTo(map);
-      });
-    </script>
   </body>
 </html>
