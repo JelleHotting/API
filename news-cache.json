@@ -1,252 +1,235 @@
 {
-  "timestamp": 1775654639238,
+  "timestamp": 1775739426446,
   "articles": [
     {
+      "id": "6d974115afbd4fb1f6535ba5af26fffe",
+      "title": "Iran announces alternative routes in Strait of Hormuz",
+      "description": "Tehran has agreed to temporarily reopen the Strait of Hormuz as part of a two-week truce. Read more at straitstimes.com.",
+      "content": "Follow our live coverage here.\n– Iran announced alternative routes on April 9 for ships travelling through the Strait of Hormuz, citing the risk of sea mines in the main zone of the vital waterway.\nTehran has agreed to temporarily reopen the strait, ... [893 chars]",
+      "url": "https://www.straitstimes.com/world/middle-east/iran-announces-alternative-routes-in-hormuz-strait",
+      "image": "https://cassette.sphdigital.com.sg/image/straitstimes/0be700af9f5e960288bea0924b1f9c37c84ebf8f95171f913719d6b5ce923420",
+      "publishedAt": "2026-04-09T00:45:00Z",
+      "lang": "en",
       "source": {
-        "id": null,
-        "name": "Abcnews.com"
-      },
-      "author": "ABC News",
-      "title": "Rapper Offset hospitalized after being shot in Florida - ABC News",
-      "description": null,
-      "url": "https://abcnews.com/US/rapper-offset-hospitalized-after-shot/story?id\\\\u003d131786229",
-      "urlToImage": null,
-      "publishedAt": "2026-04-07T11:21:44Z",
-      "content": null
+        "id": "739b615c65becd670ee152cab7f8c439",
+        "name": "The Straits Times",
+        "url": "https://www.straitstimes.com"
+      }
     },
     {
+      "id": "6e5019272cf6931886037ff34f05bee0",
+      "title": "Homeowners offer reward to catch 'coastal vandal' after $25 million barrier slashed",
+      "description": "A $14k bounty has been issued in Nantucket’s exclusive village after confirmed sabotage.",
+      "content": "It’s a tight knit community known for its cute cottages and billionaire residents.\nYet, for the past few months, homeowners in Siasconset, a village on Nantucket Island, off Cape Cod, Massachusetts, have been faced with unwanted attention from a vand... [2284 chars]",
+      "url": "https://www.domain.com.au/news/homeowners-offer-reward-to-catch-coastal-vandal-after-25-million-barrier-slashed-1502703/",
+      "image": "https://res.akamaized.net/domain/image/upload/t_web/c_fill,w_720,h_480/v1775694648/Screenshot_2026-04-08_143900_zdongk.png",
+      "publishedAt": "2026-04-09T00:41:03Z",
+      "lang": "en",
       "source": {
-        "id": "associated-press",
-        "name": "Associated Press"
-      },
-      "author": "Khalil Hamra, Suzan Fraser",
-      "title": "Gunmen attack building housing Israeli Consulate in Istanbul - apnews.com",
-      "description": "Turkish officials say that gunmen attacked a building housing the Israeli Consulate in Istanbul, sparking a gunfight that left one assailant dead and two police officers wounded. Two other assailants were captured on Tuesday. The attackers carried long-barrel…",
-      "url": "https://apnews.com/article/turkey-israel-istanbul-consulate-attack-dfabb52da25012c0c709016e72c8f630",
-      "urlToImage": "https://dims.apnews.com/dims4/default/295c329/2147483647/strip/true/crop/675x450+12+0/resize/980x653!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F90%2F29%2F4e3c1cc7446089a9101a7bdff4c8%2Fdefaultshareimage-copy.png",
-      "publishedAt": "2026-04-07T11:03:00Z",
-      "content": "ISTANBUL (AP) Three assailants opened fire at police outside a building housing the Israeli Consulate in Istanbul on Tuesday, sparking a gunfight that left one attacker dead, Turkish officials said. … [+2459 chars]"
+        "id": "40d15ccc69cb89413b69d5ec3e0abe92",
+        "name": "Domain",
+        "url": "https://www.domain.com.au"
+      }
     },
     {
+      "id": "b63df944b5d570cc47aa6bb1ad88585f",
+      "title": "Israel's continued strikes in Lebanon putting strain on fragile US-Iran ceasefire",
+      "description": "Tehran warns it will respond it Israel doesn't immediately stop attacks on Lebanon, where at least 182 people have been killed.",
+      "content": "Rutte's delicate balancing act with Trump\nBernd Debusmann Jr\nWhite House reporter\nNato Secretary General Mark Rutte has described his meeting with Donald Trump as \"frank\" and open, despite clear disagreements.\nRutte was at the White House for over tw... [5247 chars]",
+      "url": "https://www.bbc.co.uk/news/live/clyeg3224d9t",
+      "image": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/9786/live/f40e0e80-339d-11f1-ab44-83064d7b1584.jpg",
+      "publishedAt": "2026-04-09T00:40:53Z",
+      "lang": "en",
       "source": {
-        "id": "cnn",
-        "name": "CNN"
-      },
-      "author": "Arlette Saenz",
-      "title": "Liberals will try to expand their majority on the Wisconsin Supreme Court in a Tuesday election - CNN",
-      "description": "One year after Elon Musk donned a cheesehead hat and unsuccessfully poured millions of his personal fortune into a judicial contest in the state, Democrats are hoping to deliver another setback to conservatives in Wisconsin’s Supreme Court election on Tuesday.",
-      "url": "https://www.cnn.com/2026/04/07/politics/wisconsin-supreme-court-election",
-      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/ap26093061807394.jpg?c=16x9&q=w_800,c_fill",
-      "publishedAt": "2026-04-07T10:00:55Z",
-      "content": "One year after Elon Musk donned a cheesehead hat and unsuccessfully poured millions of his personal fortune into a judicial contest in the state, Democrats are hoping to deliver another setback to co… [+7503 chars]"
+        "id": "da05009467a13bbcc84557ea09d86db3",
+        "name": "BBC",
+        "url": "https://www.bbc.co.uk"
+      }
     },
     {
+      "id": "657561c4c34422af58b2a888b9ebc1b7",
+      "title": "'Fragile ceasefire at risk' and 'Putin mocks Starmer'",
+      "description": "The papers on Thursday focus on the aftermath of the two-week ceasefire deal agreed between the US, Israel and Iran.",
+      "content": "\"And still it goes on\" says the Daily Mirror, with its main picture showing burning cars following an Israeli strike, external on Beirut. It says \"cracks\" are showing in the ceasefire deal, calling Israel's attacks \"brutal\". The Daily Mail says the c... [1302 chars]",
+      "url": "https://www.bbc.co.uk/news/articles/cz67nqvz3vno",
+      "image": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/e47a/live/5a11b590-33a0-11f1-8606-05fe34b06e1b.png",
+      "publishedAt": "2026-04-09T00:40:19Z",
+      "lang": "en",
       "source": {
-        "id": null,
-        "name": "CNBC"
-      },
-      "author": "Diana Olick",
-      "title": "Iran war upends spring housing market. Here's what real estate agents are seeing - CNBC",
-      "description": "Home buyers in the first quarter were more concerned about the economy and mortgage rates than they were about home prices, CNBC's Housing Market Survey found.",
-      "url": "https://www.cnbc.com/2026/04/07/cnbc-housing-market-survey-iran-war-spring-housing.html",
-      "urlToImage": "https://image.cnbcfm.com/api/v1/image/108255132-17690176322026-01-21t173214z_729297511_rc2stfa6rvue_rtrmadp_0_usa-economy.jpeg?v=1769017654&w=1920&h=1080",
-      "publishedAt": "2026-04-07T09:30:01Z",
-      "content": "FILE PHOTO: A for sale sign is shown for a residential home in Encinitas, California, U.S. July 25, 2025. \r\nA version of this article first appeared in the CNBC Property Play newsletter with Diana Ol… [+5125 chars]"
+        "id": "da05009467a13bbcc84557ea09d86db3",
+        "name": "BBC",
+        "url": "https://www.bbc.co.uk"
+      }
     },
     {
+      "id": "a66b44c9f1516ca384b4ae617715cee2",
+      "title": "Outback town Cooladdi for sale with pub, motel and post office for A$400k",
+      "description": "An entire town is up for sale in Australia’s outback and every resident is willing to sell. Drive nine hours west of Brisbane and you’ll arrive in Cooladdi,...",
+      "content": "Cooladdi qualifies as a town due to the post office that operates out of the roadhouse, according to the Guardian, giving it the postcode 4479.\nThe town was at its peak in the 1900s when its population topped 270, ABC News reported. Then the railway ... [1056 chars]",
+      "url": "https://www.nzherald.co.nz/world/outback-town-cooladdi-for-sale-with-pub-motel-and-post-office-for-a400k/EEVOQPWKJZAXDKN5XIAKZRTCXI/",
+      "image": "https://www.nzherald.co.nz/resizer/v2/BJ45XUCKRVE4ZPVWVJ34J4TKWU.jpg?auth=be0f12467841f62e916535505f49afd3c6248e80faa0c7c5f2af2b496d1e7cd3&width=1200&height=675&quality=70&focal=1308%2C736&smart=false",
+      "publishedAt": "2026-04-09T00:39:23Z",
+      "lang": "en",
       "source": {
-        "id": null,
-        "name": "WKYC.com"
-      },
-      "author": "Ryan Haidet",
-      "title": "BIG WINNER! 1 lucky lottery ticket hits Powerball jackpot worth $231 million: See where the winning ticket was sold - WKYC",
-      "description": "Check your tickets! One lucky winner in Cleveland also hit a prize worth $100,000.",
-      "url": "https://www.wkyc.com/article/news/lottery/powerball-jackpot-winner-delaware-230-million-prize-monday-april-6-drawing-ohio-lottery-numbers-cleveland-slavic-village-bi-rite/95-50a201df-5596-424d-8b84-eaf0520f7ebf",
-      "urlToImage": "https://media.wkyc.com/assets/WKYC/images/a80494b8-4312-4d71-9b73-11d19dbc9cd7/a80494b8-4312-4d71-9b73-11d19dbc9cd7_1140x641.jpg",
-      "publishedAt": "2026-04-07T09:16:00Z",
-      "content": "CLEVELAND We have a winner! One lucky lottery ticket sold in Delaware has just won the Powerball jackpot worth $231 million in the latest drawing that was held on Monday, April 6, 2026.\r\nHere in Ohio… [+3930 chars]"
+        "id": "a086bc2011f6ea09f34f87b9ef0a588b",
+        "name": "NZ Herald",
+        "url": "https://www.nzherald.co.nz"
+      }
     },
     {
+      "id": "22999944db535cf5ee894cf947c814ad",
+      "title": "WTI, Brent, Iran accuse U.S. of ceasefire breach",
+      "description": "Oil markets rose after Iran accused the United States of violating elements of a two-week ceasefire agreement.",
+      "content": "Oil prices rose Thursday after Iran accused the U.S of violating elements of a two-week ceasefire agreement, raising concerns that tensions could escalate again and disrupt energy supplies.\nInternational benchmark Brent crude futures for June deliver... [1707 chars]",
+      "url": "https://www.cnbc.com/2026/04/09/oil-prices-today-wti-brent-iran-accuse-us-of-ceasefire-breach.html",
+      "image": "https://image.cnbcfm.com/api/v1/image/108284017-1774615135525-gettyimages-2268007114-AFP_A4VU6NZ.jpeg?v=1774615226&w=1920&h=1080",
+      "publishedAt": "2026-04-09T00:36:00Z",
+      "lang": "en",
       "source": {
-        "id": null,
-        "name": "BBC News"
-      },
-      "author": "Elizabeth Anne Brown",
-      "title": "What's the most painful sting in the world? - BBC",
-      "description": "Top contenders for the nastiest sting range from bullet ants to warrior wasps and tiny jellyfish.",
-      "url": "https://www.bbc.com/future/article/20260406-whats-the-most-painful-sting-in-the-world",
-      "urlToImage": "https://ychef.files.bbci.co.uk/624x351/p0nbvgvn.jpg",
-      "publishedAt": "2026-04-07T09:01:25Z",
-      "content": "More like this:\r\n How venomous caterpillars could help develop life-saving new drugs\r\nThe global fight against deadly snake bites\r\nThe museum filled with venomous spiders\r\nThere are several more stro… [+1525 chars]"
+        "id": "32c2ad3fb41cb87b5b847d750028dff0",
+        "name": "CNBC",
+        "url": "https://www.cnbc.com"
+      }
     },
     {
+      "id": "81350a18a8acf47a9a3654aa6d77106d",
+      "title": "Vietnam and China launch AI-driven tourism cooperation programme to promote cross-border travel",
+      "description": "Vietnam and China have launched a 14-day exchange and research programme in Nanning aimed at strengthening cooperation in cross-border tourism through the application of artificial intelligence, TV BRICS reports, citing VNA.",
+      "content": "The initiative brings together nearly 30 officials and tourism representatives from Vietnamese provinces. It is jointly organised by the Department of Culture and Tourism of China’s Guangxi Zhuang Autonomous Region and relevant Vietnamese provincial ... [1207 chars]",
+      "url": "https://qazinform.com/news/vietnam-and-china-launch-ai-driven-tourism-cooperation-programme-to-promote-cross-border-travel-ba504a",
+      "image": "https://img.inform.kz/kazinform-photobank/media/2024-05-06/b6f9b4c9-d48f-48ac-95f6-8612ed487ab1.jpeg",
+      "publishedAt": "2026-04-09T00:31:43Z",
+      "lang": "en",
       "source": {
-        "id": "nbc-news",
-        "name": "NBC News"
-      },
-      "author": "Adam Edelman, Owen Auston-Babcock",
-      "title": "Voters set to decide Wisconsin Supreme Court race and Georgia runoff for Marjorie Taylor Greene's seat - NBC News",
-      "description": "Voters in Wisconsin and northwest Georgia head to the polls Tuesday to decide a pair of races that will provide further clues about how the political environment is shaping up heading into this fall’s midterm elections",
-      "url": "https://www.nbcnews.com/politics/2026-election/wisconsin-supreme-court-race-georgia-runoff-marjorie-taylor-greene-rcna266257",
-      "urlToImage": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-03/260311-maria-lazar-chris-taylor-vl-307p-b6a081.jpg",
-      "publishedAt": "2026-04-07T09:00:00Z",
-      "content": "Voters in Wisconsin and northwest Georgia head to the polls Tuesday to decide a pair of races that will provide further clues about how the political environment is shaping up heading into this falls… [+5659 chars]"
+        "id": "11310ac5d0cac7c53b4a10f5b7b213c7",
+        "name": "Qazinform",
+        "url": "https://qazinform.com"
+      }
     },
     {
+      "id": "f97c9b393fdc659b856058e38e773505",
+      "title": "Trump criticises NATO over Iran in meeting with Rutte",
+      "description": "US President Donald Trump vented his frustration with allies during a private meeting with NATO Secretary-General Mark Rutte, as relations in the military alliance reached a crisis ⁠point over the Iran war.",
+      "content": "US President Donald Trump vented his frustration with allies during a private meeting with NATO with NATO Secretary-General Mark Rutte, as relations in the military alliance reached a crisis ⁠point over the Iran war.\n\"He is clearly disappointed with ... [3656 chars]",
+      "url": "https://www.rte.ie/news/us/2026/0409/1567311-us-nato/",
+      "image": "https://www.rte.ie/images/0024001a-1600.jpg",
+      "publishedAt": "2026-04-09T00:30:28Z",
+      "lang": "en",
       "source": {
-        "id": null,
-        "name": "NPR"
-      },
-      "author": "Brendan Byrne",
-      "title": "Artemis II astronauts swung by the moon, broke an Apollo record, and saw an eclipse - npr.org",
-      "description": "The NASA moon mission completed several key milestones as its crew looped around the lunar body. It's expected to splash down on Earth on Friday.",
-      "url": "https://www.npr.org/2026/04/07/nx-s1-5775710/artemis-lunar-flyby-complete-heading-home",
-      "urlToImage": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1920x1080+0+100/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F64%2F97%2F948f2e0941098e5d56c2a0fdc78d%2Fart002e009275-large.jpg",
-      "publishedAt": "2026-04-07T09:00:00Z",
-      "content": "The four-astronaut crew of NASA's Artemis II mission is now on its way back to Earth after a record-breaking trip around the moon, traveling farther than any other humans have before.\r\nAs the Orion c… [+4550 chars]"
+        "id": "8bcb1c163b5eb62b4cdfdafb99503799",
+        "name": "RTE.ie",
+        "url": "https://www.rte.ie"
+      }
     },
     {
+      "id": "673a0b1fabfbfc715c961983a8f642ab",
+      "title": "Trump criticises NATO over Iran in meeting with Rutte",
+      "description": "US President Donald Trump vented his frustration with allies during a private meeting with NATO Secretary-General Mark Rutte, as relations in the military alliance reached a crisis ⁠point over the Iran war.",
+      "content": "US President Donald Trump vented his frustration with allies during a private meeting with NATO with NATO Secretary-General Mark Rutte, as relations in the military alliance reached a crisis ⁠point over the Iran war.\n\"He is clearly disappointed with ... [3953 chars]",
+      "url": "https://www.rte.ie/news/us/2026/0409/1567311-us-trump-nato/",
+      "image": "https://www.rte.ie/images/0024001a-1600.jpg",
+      "publishedAt": "2026-04-09T00:30:28Z",
+      "lang": "en",
       "source": {
-        "id": "politico",
-        "name": "Politico"
-      },
-      "author": "Tyler Katzenberger",
-      "title": "Wisconsin town revolts against a Trump-backed data center project - Politico",
-      "description": "At least four local data center-related ballot measures are set to appear on ballots this year, with the first vote coming Tuesday in Port Washington, Wisconsin.",
-      "url": "https://www.politico.com/news/2026/04/07/wisconsin-data-center-ai-ballot-trump-00860020",
-      "urlToImage": "https://www.politico.com/dims4/default/resize/1200/quality/90/format/jpg?url=https%3A%2F%2Fstatic.politico.com%2F89%2Fd4%2F043018734628ad8c4493fb2e2a9c%2Fap9962453681196668-edit.jpg",
-      "publishedAt": "2026-04-07T08:45:00Z",
-      "content": "Nationwide, at least three other communities Monterey Park in California, Augusta Township in rural Michigan and Janesville, an industrial town in Southern Wisconsin are slated to weigh data center-r… [+3765 chars]"
+        "id": "8bcb1c163b5eb62b4cdfdafb99503799",
+        "name": "RTE.ie",
+        "url": "https://www.rte.ie"
+      }
     },
     {
+      "id": "996b3b756265f246b8f473f27cbeeb00",
+      "title": "George Clooney slams Donald Trump’s Iran threat as a ‘crime’",
+      "description": "The actor was speaking to students when he condemned the US president’s warning that a “whole civilisation” would die if Iran did not meet his demands.",
+      "content": "April 9, 2026 — 10:29am\nYou have reached your maximum number of saved items.\nRemove items from your saved list to add more.\nSave this article for later\nAdd articles to your saved list and come back to them anytime.\nActor and filmmaker George Clooney ... [4638 chars]",
+      "url": "https://www.theage.com.au/culture/celebrity/that-s-a-crime-george-clooney-slams-donald-trump-over-iran-war-threat-20260409-p5zmf0.html",
+      "image": "https://static.ffx.io/images/$zoom_0.353%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_3/t_crop_custom/q_86%2Cf_auto/3f14239e09fce7e5ae8fba92c69308378f27b5411b226b2eaddf97b96bbb440c",
+      "publishedAt": "2026-04-09T00:29:59Z",
+      "lang": "en",
       "source": {
-        "id": "associated-press",
-        "name": "Associated Press"
-      },
-      "author": "Jill Lawless",
-      "title": "Ye offers to meet UK Jewish community as calls mount for him to be ditched from Wireless Festival - apnews.com",
-      "description": "The British government says Ye should “absolutely not” perform at London’s Wireless Festival. The rapper, formerly known as Kanye West, has faced backlash for making antisemitic remarks and expressing admiration for Adolf Hitler. He is scheduled to perform in…",
-      "url": "https://apnews.com/article/ye-kanye-west-wireless-festival-london-64601c365e48f43802747ce3b024a5f6",
-      "urlToImage": "https://dims.apnews.com/dims4/default/64c984b/2147483647/strip/true/crop/1131x754+0+51/resize/980x653!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F58%2F39%2F99cc2fa12be454e3631f3fa738a3%2Ffcd4d78df92e42f3a7ec3e6cbefb3222",
-      "publishedAt": "2026-04-07T07:49:00Z",
-      "content": "LONDON (AP) A senior member of the British government said Tuesday that Ye should absolutely not play the Wireless Festival as the performer offered to meet members of the U.K.s Jewish community and … [+2575 chars]"
+        "id": "8952aa953859e9190b836f04018f5efe",
+        "name": "The Age",
+        "url": "https://www.theage.com.au"
+      }
     },
     {
+      "title": "Experience: I am the Excel world champion",
+      "description": "I have been called the LeBron James of spreadsheets, but I try not to take myself too seriously",
+      "url": "https://www.theguardian.com/lifeandstyle/2026/feb/06/experience-i-am-the-excel-world-champion",
       "source": {
-        "id": "axios",
-        "name": "Axios"
-      },
-      "author": "Barak Ravid, Marc Caputo",
-      "title": "Trump's tipping point: Destroy Iran's infrastructure or give talks a chance - Axios",
-      "description": "\"The president is the most bloodthirsty, like a mad dog,\"  a U.S. official said.",
-      "url": "https://www.axios.com/2026/04/07/trump-iran-deadline-bridges-power-plants",
-      "urlToImage": "https://images.axios.com/DRfILerTP_bm1toRv2TgOUxQH8s=/0x0:1920x1080/1366x768/2026/04/06/1775499953982.jpeg",
-      "publishedAt": "2026-04-07T07:04:49Z",
-      "content": "<ul><li>Mediators from Pakistan, Egypt and Turkey are working to avert that outcome by brokering a deal or at least putting time back on the clock.</li><li>\"If the president sees a deal is coming tog… [+3903 chars]"
+        "name": "The Guardian"
+      }
     },
     {
+      "title": "The world can’t wait for Donald Trump to leave office | Letters",
+      "description": "Letters: <strong>Mary Evans, Aidan Walker </strong>and <strong>Ruth Baker</strong> on Simon Jenkins’ suggestion for how to deal with the US president <strong>Phoebe Merrick</strong> and <strong>John Spencer</strong> on religion and war, <strong>Rev Canon John Longuet-Higgins</strong> on Trump’s expletive-laden threat to Iran,<strong> </strong>and <strong>Diana Francis </strong>on US bases in Britain",
+      "url": "https://www.theguardian.com/us-news/2026/apr/06/the-world-cant-wait-for-donald-trump-to-leave-office",
       "source": {
-        "id": null,
-        "name": "The Boston Globe"
-      },
-      "author": null,
-      "title": "Red Sox’ Willson Contreras says he will ‘take one of them out’ if Brewers hit him again - The Boston Globe",
-      "description": "Brandon Woodruff’s up-and-in sinker grazed Contreras’s hand in the third inning, the 24th time he's been hit by the Brewers.",
-      "url": "https://www.bostonglobe.com/2026/04/06/sports/red-sox-brewers-willson-contreras/",
-      "urlToImage": "https://bostonglobe-prod.cdn.arcpublishing.com/resizer/v2/RO5AGWMH2ILGHI4WYEJGNLE4QU.JPG?auth=570724ea952f79836753bbdb5b1b12ec2ede1ddae3fd4329c9bc8e99364f937a&width=1440",
-      "publishedAt": "2026-04-07T05:52:16Z",
-      "content": "Three hours after the Brewers hit him with another pitch, Red Sox first baseman Willson Contreras remained furious late Monday night, promising to take one of them out if it happens again and making … [+3799 chars]"
+        "name": "The Guardian"
+      }
     },
     {
+      "title": "Pre-World Cup results have you worried? They probably shouldn’t",
+      "description": "For examples of how little a team’s form in the World Cup run-in matters in the tournament itself, look no further than the US",
+      "url": "https://www.theguardian.com/football/2026/apr/02/pre-world-cup-results-have-you-worried-they-probably-shouldnt",
       "source": {
-        "id": null,
-        "name": "NPR"
-      },
-      "author": "The Associated Press",
-      "title": "Michigan muscles its way to program's 2nd NCAA basketball title, beating UConn - NPR",
-      "description": "High-scoring Michigan had to get down and dirty to dig out the national title Monday, making only two 3-pointers all night but still muscling its way to a 69-63 victory over stingy, stubborn UConn.",
-      "url": "https://www.npr.org/2026/04/07/g-s1-116620/michigan-ncaa-national-title",
-      "urlToImage": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x3375+0+313/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fe2%2Faf%2Fb0948d9547d48dcdf53360e58665%2Fap26097130437462.jpg",
-      "publishedAt": "2026-04-07T04:15:41Z",
-      "content": "INDIANAPOLIS High-scoring Michigan had to get down and dirty to dig out the national title Monday, making only two 3-pointers all night but still muscling its way to a 69-63 victory over stingy, stub… [+3149 chars]"
+        "name": "The Guardian"
+      }
     },
     {
+      "title": "Experience: I climbed the tallest tropical tree in the world",
+      "description": "It was a slow ascent: I needed to check for wasps, snakes and scorpions",
+      "url": "https://www.theguardian.com/lifeandstyle/2026/apr/03/experience-i-climbed-the-tallest-tropical-tree-in-the-world",
       "source": {
-        "id": "bloomberg",
-        "name": "Bloomberg"
-      },
-      "author": "Soo-hyang Choi",
-      "title": "Kim Jong Un Praises South Korea’s Lee for Apology on Drones - Bloomberg.com",
-      "description": "North Korean leader Kim Jong Un offered rare praise for South Korean President Lee Jae Myung, state media reported, after Lee expressed regret over an incident in which South Korean citizens sent drones over the border into the North’s airspace.",
-      "url": "https://www.bloomberg.com/news/articles/2026-04-07/kim-jong-un-praises-south-korea-s-lee-for-apology-over-drones",
-      "urlToImage": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/idda6ftTUg24/v1/1200x800.jpg",
-      "publishedAt": "2026-04-07T04:15:00Z",
-      "content": "North Korean leader Kim Jong Un offered rare praise for South Korean President Lee Jae Myung, state media reported, after Lee expressed regret over an incident in which South Korean citizens sent dro… [+250 chars]"
+        "name": "The Guardian"
+      }
     },
     {
+      "title": "TV tonight: globetrotting smash-hit Race Across the World returns",
+      "description": "A new cohort of adventurers set off – but who will make it across Europe and Asia first? Plus: The Traitors star Harry Clark takes a pilgrimage. Here’s what to watch this evening",
+      "url": "https://www.theguardian.com/tv-and-radio/2026/apr/02/tv-tonight-globetrotting-smash-hit-race-across-the-world-returns",
       "source": {
-        "id": null,
-        "name": "247Sports"
-      },
-      "author": "Noah Weiskopf",
-      "title": "NBA, College Basketball World Reacts to UNC Hiring Michael Malone - 247Sports",
-      "description": "With North Carolina expected to hire former NBA coach Michael Malone as its next head coach reactions poured in across social media Monday afternoon and evening Here are some of the responses",
-      "url": "https://247sports.com/college/north-carolina/article/unc-north-carolina-tar-heels-basketball-nba-college-basketball-world-reacts-to-unc-hiring-michael-malone-280598933/",
-      "urlToImage": "https://s3media.247sports.com/Uploads/Assets/433/696/13696433.jpg?width=1200&height=628&crop=1.91:1&fit=cover",
-      "publishedAt": "2026-04-07T04:10:30Z",
-      "content": "CHAPEL HILL — North Carolina is expected to hire longtime NBA coach Michael Malone as the program's 20th head coach, sources confirmed to TarHeel247 on Monday.\r\nThe news broke early Monday afternoon,… [+4586 chars]"
+        "name": "The Guardian"
+      }
     },
     {
+      "title": "Ditch all honorary titles for a better world | Brief letters",
+      "description": "<strong>Brief letters: </strong>Naming equality | Rugby toilets | Tesco jobs | Sturdy Y-fronts | Pillow talk",
+      "url": "https://www.theguardian.com/uk-news/2026/feb/11/ditch-all-honorary-titles-for-a-better-world",
       "source": {
-        "id": null,
-        "name": "9to5Mac"
-      },
-      "author": "Marcus Mendes",
-      "title": "Moonshot on iPhone: Astronaut Reid Wiseman snaps unbelievable photo of the lunar surface - 9to5Mac",
-      "description": "Artemis II's Commander Reid Wiseman showed off a fantastic photo of the lunar surface he took on his iPhone 17 Pro Max.",
-      "url": "https://9to5mac.com/2026/04/06/moonshot-on-iphone-astronaut-reid-wiseman-snaps-unbelievable-photo-of-the-lunar-surface/",
-      "urlToImage": "https://i0.wp.com/9to5mac.com/wp-content/uploads/sites/6/2026/04/iphone-artemis.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1",
-      "publishedAt": "2026-04-07T02:17:00Z",
-      "content": "During the Artemis II spacecrafts final approach for its historic lunar flyby, Commander Reid Wiseman showed off a fantastic photo of the lunar surface he took on his iPhone 17 Pro Max. Here are the … [+1938 chars]"
+        "name": "The Guardian"
+      }
     },
     {
+      "title": "Kylian Mbappé excited by France’s spectacular attack before World Cup",
+      "description": "Ousmane Dembélé, Michael Olise, Rayan Cherki, Désiré Doué, Hugo Ekitike and Marcus Thuram all played their parts in wins against Brazil and Colombia at the weekend",
+      "url": "https://www.theguardian.com/football/2026/mar/31/kylian-mbappe-france-attack-world-cup-dembele-olise-cherki-doue-ekitike-thuram-brazil-colombia",
       "source": {
-        "id": null,
-        "name": "Thebanner.com"
-      },
-      "author": "Darreonna Davis",
-      "title": "Artemis II crew tear up over idea of naming moon crater after astronaut’s late wife - thebanner.com",
-      "description": "Artemis II crew members want to name a moon crater after fellow astronaut Reid Wiseman’s late wife, Carroll.",
-      "url": "https://www.thebanner.com/community/local-news/artemis-ii-mission-reid-wiseman-carroll-integrity-crater-7RDZ2FHI5ZHDDLUMFWJUYTY6A4/",
-      "urlToImage": "https://www.thebanner.com/resizer/v2/HQUKMNHBG5ABVNO46JXCEANXSY.jpg?auth=3e6308e229ac653cce531ea0f1f3d4652d99569ec0bafab4810df9509ec14131&width=1280&height=720&smart=true&quality=85",
-      "publishedAt": "2026-04-07T00:03:00Z",
-      "content": "While breaking the record for distance traveled by humans from Earth, the Artemis II crew members remain focused on more personal matters in the names theyve recommended for craters.\r\nThey suggested … [+2792 chars]"
+        "name": "The Guardian"
+      }
     },
     {
+      "title": "The 2026 World Cup may transform US soccer. The 2030 World Cup could be even better",
+      "description": "This summer’s tournament is seen as a culmination, but in truth it’s the next World Cup where the USMNT may have the most success",
+      "url": "https://www.theguardian.com/football/2026/jan/07/the-2026-world-cup-might-transform-us-soccer-the-2030-world-cup-could-be-even-better",
       "source": {
-        "id": null,
-        "name": "BBC News"
-      },
-      "author": null,
-      "title": "Which Asian countries are passing through the Strait of Hormuz? - BBC",
-      "description": "Nations in the region have been keen to reach agreements as their economies are heavily reliant on Middle East energy.",
-      "url": "https://www.bbc.com/news/articles/c79jqx1xdy9o",
-      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/87e4/live/78fa26e0-3184-11f1-86cc-99d8e53afbd3.jpg",
-      "publishedAt": "2026-04-06T23:34:11Z",
-      "content": "Iranian officials assured the \"safe, unhindered and expeditious passage\" for Philippines-flagged ships through the waterway, said Theresa Lazaro, the South East Asian country's foreign affairs secret… [+3 chars]"
+        "name": "The Guardian"
+      }
     },
     {
+      "title": "How KFC, AKA Korean fried chicken, took over the world",
+      "description": "The dish, adapted from one brought by US soldiers after the Korean war, has sparked thousands of variations and sits at the forefront of the K-food wave",
+      "url": "https://www.theguardian.com/world/2026/apr/09/korean-fried-chicken",
       "source": {
-        "id": null,
-        "name": "New York Daily News"
-      },
-      "author": "Brian Niemietz",
-      "title": "TMZ ‘tipped’ Nancy Guthrie is dead after being seen in Mexico - New York Daily News",
-      "description": "Someone claiming Nancy Guthrie was taken to Mexico after being abducted from her Arizona home, but is now dead, contacted TMZ selling information.",
-      "url": "https://www.nydailynews.com/2026/04/06/tmz-nancy-guthrie-dead-mexico-tip/",
-      "urlToImage": "https://www.nydailynews.com/wp-content/uploads/2026/02/Savannah-Guthrie-with-mother-Nancy-Guthrie.jpg?w=1024&h=576",
-      "publishedAt": "2026-04-06T23:12:48Z",
-      "content": "Someone claiming to know Nancy Guthrie is dead, but was last seen alive in Mexico, is offering to deliver her kidnappers “on a silver platter.”\r\nA tipster looking to collect a Bitcoin told TMZ the mi… [+2566 chars]"
+        "name": "The Guardian"
+      }
+    },
+    {
+      "title": "‘A world in disarray’: Europe’s moment of awakening ",
+      "description": "Facing existential challenges on trade and security, the bloc has finally realised it has to grow up and go it alone – but the path ahead is a rocky one",
+      "url": "https://www.theguardian.com/world/2026/feb/11/a-world-in-disarray-macrons-moment-of-awakening",
+      "source": {
+        "name": "The Guardian"
+      }
     }
   ]
 }

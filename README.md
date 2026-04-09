@@ -74,9 +74,24 @@ Ik heb deze week feedback gekregene op mijn idee, het is een goed idee.
 
 ### Dag 2
 
+#### Wat heb ik gedaan vandaag?
+
+| Activiteit | Duur |
+|------------|------|
+| "Global" nieuws ondersteuning (AI prompt & logic) | 1.5 uur |
+| World View zoom interactie geïmplementeerd | 0.5 uur |
+| CSS Refactor (Variabelen systeem voor kleuren) | 1 uur |
+| UI/Aesthetic tuning (pink accent & white titles) | 1 uur |
+| Testen en finetunen AI output | 0.5 uur |
+
 #### Wat heb ik geleerd?
 
-* [Leerpunt]
+*   Hoe ik CSS variabelen inzet om een dashboard makkelijk te kunnen restylen.
+*   Dat "Global" events op een kaart het beste werken met een de-zoom interactie (`flyTo` naar wereldniveau).
+*   Werken met secundaire accentkleuren (pink) voor een betere visuele hiërarchie.
+
+#### Wat ga ik morgen doen?
+- [ ] Week reflectie
 
 ### Week 2 recap
 

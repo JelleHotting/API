@@ -1,5 +1,11 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 body,
 html {
+  background-color: #1c1c1c;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -14,10 +20,23 @@ iframe {
 
 :root {
   /* Industrial Palette */
+  --background: #1c1c1c;
   --surface-dim: #131313;
-  --surface-glass: rgba(19, 19, 19, 0.1);
+  --surface-glass: rgba(19, 19, 19, 0.4);
   --primary: #00ff41; /* Neon Emerald */
+  --primary-dim: rgba(0, 255, 65, 0.2);
+  --primary-faint: rgba(0, 255, 65, 0.05);
+  
+  --accent-global: #FF0055;
+  --accent-global-dim: rgba(255, 0, 85, 0.2);
+  --accent-global-faint: rgba(255, 0, 85, 0.05);
+  
   --on-surface: #ffffff;
+  --on-surface-muted: rgba(255, 255, 255, 0.9);
+  --border-light: rgba(255, 255, 255, 0.1);
+  --border-dim: rgba(255, 255, 255, 0.05);
+  
+  --status-idle: #333;
   --font-tech: "JetBrains Mono", monospace;
 }
 
@@ -26,19 +45,21 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
-  background: var(--surface-dim);
+  background: var(--background);
   color: var(--on-surface);
   font-family: var(--font-tech);
   overflow: hidden;
 }
 
-#map {
+#map,
+.leaflet-container {
   height: 100vh;
   width: 100vw;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
+  background-color: var(--background) !important;
 }
 
 /* News HUD Sidebar */
@@ -50,13 +71,14 @@ html {
   height: calc(100vh - 40px);
   background: var(--surface-glass);
   backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border-light);
   z-index: 1000;
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
   overflow: hidden;
 }
+
 .news-sidebar h1 {
   font-size: 1.2rem;
   color: var(--primary);
@@ -72,7 +94,8 @@ html {
   flex-direction: column;
   gap: 1.5rem;
   overflow-y: auto;
-  padding-right: 0.5rem;
+  padding: 0 0.5rem 0 0;
+  list-style: none;
 }
 
 .news-list::-webkit-scrollbar {
@@ -88,18 +111,30 @@ html {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  padding: 0.5rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  transition: transform 0.2s ease;
+  padding: 0.5rem 0.5rem;
+  border-bottom: 1px solid var(--border-dim);
+  transition: all 0.2s ease;
+  cursor: pointer;
 }
 
+.news-item.active {
+  background: var(--primary-faint);
+  border-left: 3px solid var(--primary);
+  transform: translateX(4px);
+  border-bottom-color: var(--primary-dim);
+}
 
+.news-item.global.active {
+  background: var(--accent-global-faint);
+  border-left-color: var(--accent-global);
+  border-bottom-color: var(--accent-global-dim);
+}
 
 .news-title {
   font-size: 0.85rem;
   line-height: 1.4;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--on-surface-muted);
 }
 
 .location-tag {
@@ -112,10 +147,20 @@ html {
   color: var(--primary);
 }
 
+.news-item.global .location-tag {
+  color: var(--accent-global);
+  font-weight: bold;
+}
+
+.news-item.global .status-dot {
+  background-color: var(--accent-global);
+  box-shadow: 0 0 4px var(--accent-global-dim);
+}
+
 .status-dot {
   width: 6px;
   height: 6px;
-  background-color: #333;
+  background-color: var(--status-idle);
   border-radius: 50%;
   transition: all 0.3s ease;
 }
@@ -132,8 +177,14 @@ html {
 }
 
 @keyframes scan-pulse {
-  from { opacity: 0.4; transform: scale(0.8); }
-  to { opacity: 1; transform: scale(1.2); }
+  from {
+    opacity: 0.4;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1.2);
+  }
 }
 
 /* --- Leaflet Control Overrides --- */
@@ -152,7 +203,7 @@ html {
 .leaflet-bar a:hover {
   background: var(--surface-glass) !important;
   backdrop-filter: blur(20px);
-  border: 1px solid rgba(0, 255, 65, 0.2) !important; /* Low opacity primary */
+  border: 1px solid var(--primary-dim) !important;
   border-radius: 0 !important;
   color: var(--primary) !important;
   width: 40px !important;
@@ -166,10 +217,8 @@ html {
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .leaflet-control-zoom-in {
-  /* Separator fix */
-  border-bottom: 1px solid rgba(0, 255, 65, 0.2) !important;
+  border-bottom: 1px solid var(--primary-dim) !important;
 }
 
 /* --- Radar Pulse Animation --- */
@@ -178,16 +227,5 @@ html {
   transform-origin: center;
   transform-box: fill-box;
   animation: pulse-ring 3s cubic-bezier(0.24, 0, 0.38, 1) infinite;
-}
-
-@keyframes pulse-ring {
-  0% {
-    transform: scale(0.5);
-    opacity: 0.8;
-  }
-  100% {
-    transform: scale(1.5);
-    opacity: 0;
-  }
 }
 

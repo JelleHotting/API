@@ -23,7 +23,7 @@ export function initMap(elementId) {
 
   L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
     subdomains: "abcd",
-    maxZoom: 20,
+    maxZoom: 8,
     minZoom: 2,
   }).addTo(map);
 

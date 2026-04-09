@@ -1,6 +1,6 @@
 ---
 // Bron: Google. (2026, April 8). Antigravity [AI coding assistant]. Sessie met prompt: "zorg dat er maar eens per uur nieuwe artikelen worden gevraagd". Conversatie ID: 053cd16d-9d7e-4f1f-b62b-8e8e04d8cb3d.
-import { getCachedArticles } from '../utils/news.js';
+import { getCachedArticles } from "../utils/news.js";
 
 const articles = await getCachedArticles();
 ---
@@ -29,24 +29,23 @@ const articles = await getCachedArticles();
     />
   </head>
   <body>
-	
     <div id="map"></div>
 
     <aside class="news-sidebar">
-      <h1>Nieuws feed</h1>
-      <div class="news-list" id="news-list">
+      <h1>NEWS FEED</h1>
+      <ul class="news-list" id="news-list">
         {
           articles.map((article, index) => (
-            <div class="news-item">
+            <li class="news-item">
               <div class="news-title">{article.title}</div>
               <div class="location-tag">
                 <span class="status-dot" />
                 <span class="location-text">Scanning...</span>
               </div>
-            </div>
+            </li>
           ))
         }
-      </div>
+      </ul>
 
       <script
         id="news-data"
@@ -62,6 +61,5 @@ const articles = await getCachedArticles();
       integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
       crossorigin=""></script>
     <script src="../scripts/main.js"></script>
-
   </body>
 </html>
