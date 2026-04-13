@@ -1,28 +1,4 @@
-// Bron: Google. (2026, April 8). Antigravity [AI coding assistant]. Sessie met prompt: "zorg dat er maar eens per uur nieuwe artikelen worden gevraagd". Conversatie ID: 053cd16d-9d7e-4f1f-b62b-8e8e04d8cb3d.
-import fs from 'node:fs';
-import path from 'node:path';
-
-const CACHE_FILE = path.join(process.cwd(), 'news-cache.json');
-const CACHE_DURATION_MS = 60 * 60 * 1000; // 1 hour
-
-export async function getCachedArticles() {
-  const now = Date.now();
-  
-  // Check if cache file exists
-  if (fs.existsSync(CACHE_FILE)) {
-    try {
-      const cacheData = JSON.parse(fs.readFileSync(CACHE_FILE, 'utf-8'));
-      
-      // If cache is not expired, return it
-      if (now - cacheData.timestamp < CACHE_DURATION_MS) {
-        console.log('Using cached articles (less than 1 hour old)');
-        return cacheData.articles;
-      }
-    } catch (e) {
-      console.error('Error reading cache file:', e);
-    }
-  }
-
+export async function getArticles() {
   // Fetch new articles from multiple sources
   console.log('Fetching fresh articles from GNews and The Guardian...');
   
@@ -31,16 +7,7 @@ export async function getCachedArticles() {
     fetchGuardianArticles()
   ]);
 
-  const allArticles = [...gnewsArticles, ...guardianArticles];
-
-  // Save to cache
-  const cacheData = {
-    timestamp: now,
-    articles: allArticles
-  };
-  fs.writeFileSync(CACHE_FILE, JSON.stringify(cacheData, null, 2));
-
-  return allArticles;
+  return [...gnewsArticles, ...guardianArticles];
 }
 
 async function fetchGNewsArticles() {

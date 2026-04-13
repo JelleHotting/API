@@ -58,8 +58,6 @@ Example output for local: {"country": "France", "city": "Paris"}`,
 ],
           });
         }
-
-        console.log(`AI aan het werk voor: ${title}`);
         const query = `Headline: ${title}\nDescription: ${description}`;
         const result = await session.prompt(query);
         
@@ -145,7 +143,7 @@ Example output for local: {"country": "France", "city": "Paris"}`,
            }
         });
         
-        // Alleen wachten als we de AI echt hebben gebruikt
+        // Alleen wachten als de AI echt is gebruikt
         if (!cachedData && i < articles.length - 1) {
           await new Promise(r => setTimeout(r, 1000));
         }

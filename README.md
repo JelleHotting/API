@@ -96,7 +96,13 @@ Ik heb deze week feedback gekregene op mijn idee, het is een goed idee.
 ### Week 2 recap
 
 #### Wat heb ik deze week gedaan?
-[Korte samenvatting van de week]
+Locaties toegevoegd door middel van de Gemini Web AI API, en ervoor gezorgd dat de kaart soepel naar de locatie van het artikel kan scrollen.
+
+Ik zou webworkers kunnen gebruiken om de AI sneller te laten werken
+
+Details pagina moet ik nog over denken om het creatief te maken, misschien een emoji toevoegen op basis van hoe positief het nieuws is
+
+![alt text](readmeImages/week2.png)
 
 #### Belangrijkste leerpunten
 * [Punt]

@@ -1,8 +1,7 @@
 ---
-// Bron: Google. (2026, April 8). Antigravity [AI coding assistant]. Sessie met prompt: "zorg dat er maar eens per uur nieuwe artikelen worden gevraagd". Conversatie ID: 053cd16d-9d7e-4f1f-b62b-8e8e04d8cb3d.
-import { getCachedArticles } from "../utils/news.js";
+import { getArticles } from "../utils/news.js";
 
-const articles = await getCachedArticles();
+const articles = await getArticles();
 ---
 
 <!doctype html>
