@@ -6,12 +6,12 @@
 ## Leerdoelen bij deze opdracht
 
 - [Leerdoel 1]
-    - [Beschrijving van wat je wilt leren en bouwen]
-    - *Reden: [Waarom is dit belangrijk voor je ontwikkeling?]*
+  - [Beschrijving van wat je wilt leren en bouwen]
+  - _Reden: [Waarom is dit belangrijk voor je ontwikkeling?]_
 
 - [Leerdoel 2]
-    - [Beschrijving van wat je wilt leren en bouwen]
-    - *Reden: [Waarom is dit belangrijk voor je ontwikkeling?]*
+  - [Beschrijving van wat je wilt leren en bouwen]
+  - _Reden: [Waarom is dit belangrijk voor je ontwikkeling?]_
 
 ## Week 1
 
@@ -19,33 +19,36 @@
 
 #### Wat heb ik gedaan vandaag?
 
-| Activiteit | Duur |
-|------------|------|
-| Introductie Astro | 2 uur |
+| Activiteit                    | Duur  |
+| ----------------------------- | ----- |
+| Introductie Astro             | 2 uur |
 | Brainstormen over het project | 2 uur |
-| Basis gemaakt aan styling | 1 uur |
-| Map gemaakt| 1 uur |
-| Pauze | 1 uur |
+| Basis gemaakt aan styling     | 1 uur |
+| Map gemaakt                   | 1 uur |
+| Pauze                         | 1 uur |
 
 #### Wat heb ik geleerd?
 
-* Hoe astro werkt
-* Server side rendering
+- Hoe astro werkt
+- Server side rendering
 
 ![Afbeelding van de wesbite van dag1](readmeImages/dag1.png)
 
 #### Wat ga ik morgen doen?
+
 - [x] Feedback krijgen
 
 ### Week 1 recap
 
 #### Wat heb ik deze week gedaan?
+
 Ik heb deze week feedback gekregene op mijn idee, het is een goed idee.
 
 #### Belangrijkste leerpunten
-* APIs werken met een limiet
-* Hoe je een .env file opbouwt
-* Hoe ASTRO te installen
+
+- APIs werken met een limiet
+- Hoe je een .env file opbouwt
+- Hoe ASTRO te installen
 
 ---
 
@@ -55,47 +58,50 @@ Ik heb deze week feedback gekregene op mijn idee, het is een goed idee.
 
 #### Wat heb ik gedaan vandaag?
 
-| Activiteit | Duur |
-|------------|------|
-| JS herstructureren (inline naar aparte bestanden) | 1 uur |
-| Chrome AI (Gemini Nano) integratie voor locaties | 2 uur |
-| Prompt engineering voor nauwkeurigheid & US/Global | 1 uur |
-| Leaflet map configuratie (scrollen & visualisaties) | 1 uur |
-| API request throttling implementeren (1u interval) | 0.5 uur |
+| Activiteit                                          | Duur    |
+| --------------------------------------------------- | ------- |
+| JS herstructureren (inline naar aparte bestanden)   | 1 uur   |
+| Chrome AI (Gemini Nano) integratie voor locaties    | 2 uur   |
+| Prompt engineering voor nauwkeurigheid & US/Global  | 1 uur   |
+| Leaflet map configuratie (scrollen & visualisaties) | 1 uur   |
+| API request throttling implementeren (1u interval)  | 0.5 uur |
 
 #### Wat heb ik geleerd?
 
-* Werken met Chrome's lokale `window.ai` voor on-device tekstverwerking.
-* Hoe je Prompt engineering inzet om specifieke coördinaten uit tekst te halen.
-* Leaflet map instellingen finetunen voor betere interactie (horizontal scrolling).
+- Werken met Chrome's lokale `window.ai` voor on-device tekstverwerking.
+- Hoe je Prompt engineering inzet om specifieke coördinaten uit tekst te halen.
+- Leaflet map instellingen finetunen voor betere interactie (horizontal scrolling).
 
 #### Wat ga ik morgen doen?
+
 - [ ] De news feed visuele upgrades geven (kaartjes, animaties).
 
 ### Dag 2
 
 #### Wat heb ik gedaan vandaag?
 
-| Activiteit | Duur |
-|------------|------|
+| Activiteit                                        | Duur    |
+| ------------------------------------------------- | ------- |
 | "Global" nieuws ondersteuning (AI prompt & logic) | 1.5 uur |
-| World View zoom interactie geïmplementeerd | 0.5 uur |
-| CSS Refactor (Variabelen systeem voor kleuren) | 1 uur |
-| UI/Aesthetic tuning (pink accent & white titles) | 1 uur |
-| Testen en finetunen AI output | 0.5 uur |
+| World View zoom interactie geïmplementeerd        | 0.5 uur |
+| CSS Refactor (Variabelen systeem voor kleuren)    | 1 uur   |
+| UI/Aesthetic tuning (pink accent & white titles)  | 1 uur   |
+| Testen en finetunen AI output                     | 0.5 uur |
 
 #### Wat heb ik geleerd?
 
-*   Hoe ik CSS variabelen inzet om een dashboard makkelijk te kunnen restylen.
-*   Dat "Global" events op een kaart het beste werken met een de-zoom interactie (`flyTo` naar wereldniveau).
-*   Werken met secundaire accentkleuren (pink) voor een betere visuele hiërarchie.
+- Hoe ik CSS variabelen inzet om een dashboard makkelijk te kunnen restylen.
+- Dat "Global" events op een kaart het beste werken met een de-zoom interactie (`flyTo` naar wereldniveau).
+- Werken met secundaire accentkleuren (pink) voor een betere visuele hiërarchie.
 
 #### Wat ga ik morgen doen?
+
 - [ ] Week reflectie
 
 ### Week 2 recap
 
 #### Wat heb ik deze week gedaan?
+
 Locaties toegevoegd door middel van de Gemini Web AI API, en ervoor gezorgd dat de kaart soepel naar de locatie van het artikel kan scrollen.
 
 Ik zou webworkers kunnen gebruiken om de AI sneller te laten werken
@@ -105,51 +111,55 @@ Details pagina moet ik nog over denken om het creatief te maken, misschien een e
 ![alt text](readmeImages/week2.png)
 
 #### Belangrijkste leerpunten
-* [Punt]
+
+- [Punt]
 
 ---
 
-## Week 3 
+## Week 3
 
 ### Dag 1
 
-| Activiteit | Duur |
-|------------|------|
+| Activiteit   | Duur   |
+| ------------ | ------ |
 | [Activiteit] | [Tijd] |
 
 #### Wat heb ik geleerd?
 
-* [Leerpunt]
+- [Leerpunt]
 
 #### Wat ga ik morgen doen?
+
 - [ ] [Plan]
 
 ### Dag 2
 
-| Activiteit | Duur |
-|------------|------|
+| Activiteit   | Duur   |
+| ------------ | ------ |
 | [Activiteit] | [Tijd] |
 
 #### Wat heb ik geleerd?
 
-* [Leerpunt]
+- [Leerpunt]
 
 #### Wat ga ik morgen doen?
+
 - [ ] [Plan]
 
 ### Week 3 recap
 
 #### Belangrijkste leerpunten
-* [Punt]
+
+- [Punt]
 
 ---
 
-## Week 4 
+## Week 4
 
 ### Dag 1
 
-| Activiteit | Duur |
-|------------|------|
+| Activiteit   | Duur   |
+| ------------ | ------ |
 | [Activiteit] | [Tijd] |
 
 ### Eindreflectie
@@ -163,10 +173,12 @@ Details pagina moet ik nog over denken om het creatief te maken, misschien een e
 ## Bronnen en AI-verantwoording
 
 ### Externe bronnen
+
 - [Bron 1]
 - [Bron 2]
 
 ### AI-gebruik
+
 - Antigravity (Google DeepMind)
 
 ### Verantwoording AI-gebruik

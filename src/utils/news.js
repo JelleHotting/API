@@ -1,7 +1,5 @@
 export async function getArticles() {
   // Fetch new articles from multiple sources
-  console.log('Fetching fresh articles from GNews and The Guardian...');
-  
   const [gnewsArticles, guardianArticles] = await Promise.all([
     fetchGNewsArticles(),
     fetchGuardianArticles()
@@ -18,7 +16,6 @@ async function fetchGNewsArticles() {
     const response = await fetch(url);
     const data = await response.json();
     const articles = data.articles || [];
-    console.log(`GNews articles fetched: ${articles.length}`);
     return articles;
   } catch (e) {
     console.error('Error fetching from GNews:', e);
@@ -27,9 +24,6 @@ async function fetchGNewsArticles() {
 }
 
 async function fetchGuardianArticles() {
-  // Debug: toon welke meta keys beschikbaar zijn (optioneel)
-  // console.log('Beschikbare env keys:', Object.keys(import.meta.env));
-  
   // Gebruik de correcte spelling die nu in .env staat
   const API_KEY = import.meta.env.GUARDIAN_API_KEY || process.env.GUARDIAN_API_KEY;
   
@@ -44,8 +38,6 @@ async function fetchGuardianArticles() {
     const response = await fetch(url);
     const data = await response.json();
     const results = data.response?.results || [];
-    
-    console.log(`The Guardian articles fetched: ${results.length}`);
     
     return results.map(item => ({
       title: item.webTitle,
