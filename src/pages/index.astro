@@ -1,5 +1,6 @@
 ---
 import { getArticles } from "../utils/news.js";
+import "../styles/global.css";
 
 const articles = await getArticles();
 ---
@@ -16,7 +17,7 @@ const articles = await getArticles();
     <meta name="generator" content={Astro.generator} />
     <title>Locus</title>
 
-    <link rel="stylesheet" href="/src/styles/global.css" />
+    
 
     <!-- Leaflet CSS -->
     <!-- Bron https://leafletjs.com/examples.html -->
@@ -59,6 +60,8 @@ const articles = await getArticles();
       src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
       integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
       crossorigin=""></script>
-    <script src="../scripts/main.js"></script>
+    <script>
+      import "../scripts/main.js";
+    </script>
   </body>
 </html>
