@@ -1,0 +1,80 @@
+---
+import { getArticles } from "../../utils/news.js";
+import "../../styles/global.css";
+import { ClientRouter } from 'astro:transitions';
+
+export const prerender = false;
+
+const id = Astro.url.searchParams.get('id');
+const articles = await getArticles();
+const article = articles.find(a => a.id === id);
+
+if (!article) {
+  console.log("ARTICLE NOT FOUND via ID:", id);
+}
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📡</text></svg>"
+    />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Locus - {article?.title || "Not found"}</title>
+
+    <!-- Leaflet CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <ClientRouter />
+  </head>
+
+  <body>
+    <div id="map" transition:name="map" transition:persist></div>
+
+    <div class="article-overlay-container">
+      <div class="article-overlay" transition:name={`article-${article?.id}`}>
+        <a href="/" class="back-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </a>
+
+        <div class="article-content news-item">
+          <div class="location-tag">
+            <span class="status-dot" />
+            <span class="location-text">Scanning...</span>
+          </div>
+
+          <h1 class="article-title">{article?.title || "Article missing or API limit reached"}</h1>
+          <p class="article-description">{article?.description}</p>
+          
+          {article?.url && (
+            <a href={article.url} target="_blank" rel="noopener noreferrer" class="external-link">
+              Read Full Article ↗
+            </a>
+          )}
+        </div>
+      </div>
+
+      <script
+        id="news-data"
+        type="application/json"
+        set:html={JSON.stringify(article ? [article] : [])}
+      />
+    </div>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""></script>
+    <script>
+      import "../../scripts/main.js";
+    </script>
+  </body>
+</html>

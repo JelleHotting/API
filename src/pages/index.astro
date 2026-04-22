@@ -1,6 +1,7 @@
 ---
 import { getArticles } from "../utils/news.js";
 import "../styles/global.css";
+import { ClientRouter } from 'astro:transitions';
 
 const articles = await getArticles();
 ---
@@ -17,8 +18,6 @@ const articles = await getArticles();
     <meta name="generator" content={Astro.generator} />
     <title>Locus</title>
 
-    
-
     <!-- Leaflet CSS -->
     <!-- Bron https://leafletjs.com/examples.html -->
     <link
@@ -27,20 +26,26 @@ const articles = await getArticles();
       integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
       crossorigin=""
     />
+    <ClientRouter />
   </head>
   <body>
-    <div id="map"></div>
+    <div id="map" transition:name="map" transition:persist></div>
 
     <aside class="news-sidebar">
       <h1>NEWS FEED</h1>
       <ul class="news-list" id="news-list">
         {
           articles.map((article, index) => (
-            <li class="news-item">
+            <li class="news-item" transition:name={`article-${article.id}`}>
               <div class="news-title">{article.title}</div>
-              <div class="location-tag">
-                <span class="status-dot" />
-                <span class="location-text">Scanning...</span>
+              <div class="news-footer">
+                <div class="location-tag">
+                  <span class="status-dot" />
+                  <span class="location-text">Scanning...</span>
+                </div>
+                <a href={`/article?id=${article.id}`} class="read-more-btn">
+                  Read ↗
+                </a>
               </div>
             </li>
           ))

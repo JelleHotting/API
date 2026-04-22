@@ -116,55 +116,31 @@ Details pagina moet ik nog over denken om het creatief te maken, misschien een e
 
 ---
 
-## Week 3
-
-### Dag 1
-
-| Activiteit   | Duur   |
-| ------------ | ------ |
-| [Activiteit] | [Tijd] |
-
-#### Wat heb ik geleerd?
-
-- [Leerpunt]
-
-#### Wat ga ik morgen doen?
-
-- [ ] [Plan]
-
-### Dag 2
-
-| Activiteit   | Duur   |
-| ------------ | ------ |
-| [Activiteit] | [Tijd] |
-
-#### Wat heb ik geleerd?
-
-- [Leerpunt]
-
-#### Wat ga ik morgen doen?
-
-- [ ] [Plan]
-
-### Week 3 recap
-
-#### Belangrijkste leerpunten
-
-- [Punt]
-
----
-
 ## Week 4
 
 ### Dag 1
 
-| Activiteit   | Duur   |
-| ------------ | ------ |
-| [Activiteit] | [Tijd] |
+#### Wat heb ik gedaan vandaag?
+
+| Activiteit                    | Duur   |
+| ----------------------------- | ------ |
+| Overlay toegevoegd aan detail | 4 uur  |
+| Sentiment toegevoegd dmv ai  | 2 uur  |
+
+
+#### Wat heb ik geleerd?
+
+- Hoe je viewtransition gebruikt serverside
+- Hoe dmv ?id aparte content kan laden op een bepaalde pagina
+
+#### Wat ga ik morgen doen?
+
+- [ ] Bugfixes en kleine optimalisaties
+
 
 ### Eindreflectie
 
-[Hier komt je eindreflectie. Wat heb je geleerd? Wat ging soepel? Wat was moeilijk?]
+[Hier komt je eindreflectie. Wat heb je geleerd? Wat ging zoepel? Wat was moeilijk?]
 
 [Afbeelding van het eindresultaat]
 
