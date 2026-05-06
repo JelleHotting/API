@@ -8,8 +8,9 @@ export async function getArticles() {
   });
 }
 
+// Bron: The Guardian Open Platform (https://openplatform.theguardian.com/)
+// Gebruikt voor het ophalen van wereldwijde nieuwsartikelen
 async function fetchGuardianArticles() {
-  // Gebruik de correcte spelling die nu in .env staat
   const API_KEY =
     import.meta.env.GUARDIAN_API_KEY;
 
@@ -18,7 +19,7 @@ async function fetchGuardianArticles() {
     return [];
   }
 
-  const url = `https://content.guardianapis.com/search?q=world&show-fields=trailText&api-key=${API_KEY}&page-size=20`;
+  const url = `https://content.guardianapis.com/search?q=world&order-by=newest&show-fields=trailText&api-key=${API_KEY}&page-size=20`;
 
   try {
     const response = await fetch(url);

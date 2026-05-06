@@ -1,7 +1,7 @@
 ---
 import { getArticles } from "../utils/news.js";
 import "../styles/global.css";
-import { ClientRouter } from 'astro:transitions';
+import { ClientRouter } from "astro:transitions";
 
 const articles = await getArticles();
 ---
@@ -29,24 +29,24 @@ const articles = await getArticles();
     <ClientRouter />
   </head>
   <body>
-    <div id="map" transition:name="map" transition:persist></div>
+    <main id="map" role="application" aria-label="Interactive map"></main>
 
     <aside class="news-sidebar">
       <h1>NEWS FEED</h1>
       <ul class="news-list" id="news-list">
         {
-          articles.map((article, index) => (
+          articles.map((article) => (
             <li class="news-item" transition:name={`article-${article.id}`}>
-              <div class="news-title">{article.title}</div>
-              <div class="news-footer">
-                <div class="location-tag">
-                  <span class="status-dot" />
+              <h2 class="news-title">{article.title}</h2>
+              <footer class="news-footer">
+                <p class="location-tag">
+                  <span class="status-dot" aria-hidden="true" />
                   <span class="location-text">Scanning...</span>
-                </div>
-                <a href={`/article?id=${article.id}`} class="read-more-btn">
+                </p>
+                <a href={`/article?id=${article.id}`} class="read-more-btn" aria-label={`Read more about ${article.title}`}>
                   Read ↗
                 </a>
-              </div>
+              </footer>
             </li>
           ))
         }
@@ -58,6 +58,15 @@ const articles = await getArticles();
         set:html={JSON.stringify(articles)}
       />
     </aside>
+
+    <section class="legend" aria-labelledby="legend-title">
+      <h2 id="legend-title">LEGEND</h2>
+      <ul>
+        <li><span class="status-dot pos" aria-hidden="true"></span> Positive news</li>
+        <li><span class="status-dot neu" aria-hidden="true"></span> Neutral news</li>
+        <li><span class="status-dot neg" aria-hidden="true"></span> Negative news</li>
+      </ul>
+    </section>
 
     <!-- Leaflet JS -->
     <!-- Bron https://leaflet-extras.github.io/leaflet-providers/preview/#filter=CartoDB.DarkMatter -->

@@ -40,6 +40,8 @@ export async function extractLocations(articles, map) {
         coords = parsed.coords;
       } else {
         // Alleen sessie aanmaken als we echt de AI nodig hebben
+        // Bron: Google DeepMind. (2026). Antigravity [Large language model]. https://deepmind.google/
+        // Prompt: "Kan je een system prompt schrijven voor de lokale Chrome AI die nieuws headlines analyseert en altijd een strict JSON object teruggeeft met country, city en sentiment?"
         if (!session) {
           session = await LanguageModel.create({
             initialPrompts: [
@@ -109,7 +111,6 @@ Example output for local: {"country": "France", "city": "Paris", "sentiment": "n
         if (textEl) {
           if (data.country === "Global") {
             textEl.textContent = "GLOBAL";
-            item.classList.add("global");
           } else {
             textEl.textContent = `${data.city && data.city !== "Global" ? data.city + ", " : ""}${data.country || "Unknown"}`;
           }
@@ -119,13 +120,13 @@ Example output for local: {"country": "France", "city": "Paris", "sentiment": "n
         if (map && coords) {
           let mapLayer;
 
-          let itemColor = "color(display-p3 0 1 0.25)"; 
+          let itemColor = "color(display-p3 0 1 0.25)";
           if (data.sentiment === "neutral")
             itemColor = "color(display-p3 1 0.8 0)";
           else if (data.sentiment === "negative")
             itemColor = "color(display-p3 1 0 0.33)";
 
-          if (coords.geojson ) {
+          if (coords.geojson) {
             mapLayer = L.geoJSON(coords.geojson, {
               style: {
                 color: itemColor,
@@ -179,7 +180,7 @@ Example output for local: {"country": "France", "city": "Paris", "sentiment": "n
             });
           } else if (data.country === "Global") {
             // World View Zoom
-            map.flyTo([20, 0], 2, {
+            map.flyTo([20, 0], 3, {
               duration: 2,
               easeLinearity: 0.25,
             });
@@ -197,7 +198,10 @@ Example output for local: {"country": "France", "city": "Paris", "sentiment": "n
   }
 }
 
+// Bron: Google DeepMind. (2026). Antigravity [Large language model]. https://deepmind.google/
+// Prompt: "Hoe kan ik in JavaScript veilig coördinaten en geojson polygonen ophalen voor een stad en land combinatie via de Nominatim OpenStreetMap API?"
 async function getCoordinates(city, country) {
+  // Maakt een zoekterm: "Stad, Land" als de stad bekend is, anders alleen "Land"
   const query = city && city !== "Global" ? `${city}, ${country}` : country;
   try {
     const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}&limit=1&polygon_geojson=1`;

@@ -1,13 +1,13 @@
 ---
-import { getArticles } from "../../utils/news.js";
+import { ClientRouter } from "astro:transitions";
 import "../../styles/global.css";
-import { ClientRouter } from 'astro:transitions';
+import { getArticles } from "../../utils/news.js";
 
 export const prerender = false;
 
-const id = Astro.url.searchParams.get('id');
+const id = Astro.url.searchParams.get("id");
 const articles = await getArticles();
-const article = articles.find(a => a.id === id);
+const article = articles.find((a) => a.id === id);
 
 if (!article) {
   console.log("ARTICLE NOT FOUND via ID:", id);
@@ -37,30 +37,51 @@ if (!article) {
   </head>
 
   <body>
-    <div id="map" transition:name="map" transition:persist></div>
+    <main id="map" role="application" aria-label="Interactive map"></main>
 
     <div class="article-overlay-container">
-      <div class="article-overlay" transition:name={`article-${article?.id}`}>
-        <a href="/" class="back-button">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      <article class="article-overlay" transition:name={`article-${article?.id}`}>
+        <a href="/" class="back-button" aria-label="Terug naar nieuwsoverzicht">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+            ><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg
+          >
         </a>
 
         <div class="article-content news-item">
-          <div class="location-tag">
-            <span class="status-dot" />
+          <p class="location-tag">
+            <span class="status-dot" aria-hidden="true"></span>
             <span class="location-text">Scanning...</span>
-          </div>
+          </p>
 
-          <h1 class="article-title">{article?.title || "Article missing or API limit reached"}</h1>
-          <p class="article-description">{article?.description}</p>
-          
-          {article?.url && (
-            <a href={article.url} target="_blank" rel="noopener noreferrer" class="external-link">
-              Read Full Article ↗
-            </a>
-          )}
+          <h1 class="article-title">
+            {article?.title || "Article missing or API limit reached"}
+          </h1>
+          <p class="article-description" set:html={article?.description} />
+
+          {
+            article?.url && (
+              <a
+                href={article.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="external-link"
+              >
+                Read Full Article ↗
+              </a>
+            )
+          }
         </div>
-      </div>
+      </article>
 
       <script
         id="news-data"

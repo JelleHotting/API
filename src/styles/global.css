@@ -131,7 +131,6 @@ html {
   color: var(--on-surface-muted);
 }
 
-
 .news-footer {
   display: flex;
   justify-content: space-between;
@@ -164,7 +163,7 @@ html {
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: var(--primary);
+  color: var(--on-surface-muted);
 }
 
 .news-item.global .location-tag {
@@ -227,6 +226,37 @@ html {
 .news-item.sentiment-negative .status-dot.completed {
   background-color: var(--sentiment-neg);
   box-shadow: 0 0 4px var(--sentiment-neg);
+}
+
+/* Sentiment-specific button styling */
+.news-item.sentiment-positive .read-more-btn {
+  color: var(--sentiment-pos);
+  border-color: var(--sentiment-pos-dim);
+  background: var(--sentiment-pos-dim);
+
+  :hover {
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.news-item.sentiment-neutral .read-more-btn {
+  color: var(--sentiment-neu);
+  border-color: var(--sentiment-neu-dim);
+  background: var(--sentiment-neu-dim);
+
+  :hover {
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.news-item.sentiment-negative .read-more-btn {
+  color: var(--sentiment-neg);
+  border-color: var(--sentiment-neg-dim);
+  background: var(--sentiment-neg-dim);
+
+  :hover {
+    color: rgba(0, 0, 0, 0.5);
+  }
 }
 
 /* --- Leaflet Control Overrides --- */
@@ -357,3 +387,110 @@ html {
   transform: none;
 }
 
+/* --- Legend Overlay --- */
+.legend {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: var(--surface-glass);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--border-light);
+  padding: 1.5rem;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.legend h2 {
+  font-size: 1rem;
+  color: var(--primary);
+  margin: 0 0 1rem 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 0.5rem;
+}
+
+.legend ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.legend li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--on-surface-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.legend .status-dot.pos {
+  background-color: var(--sentiment-pos);
+  box-shadow: 0 0 4px var(--sentiment-pos);
+}
+
+.legend .status-dot.neu {
+  background-color: var(--sentiment-neu);
+  box-shadow: 0 0 4px var(--sentiment-neu);
+}
+
+.legend .status-dot.neg {
+  background-color: var(--sentiment-neg);
+  box-shadow: 0 0 4px var(--sentiment-neg);
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+  .legend {
+    bottom: auto;
+    top: 20px;
+    right: 20px;
+    left: auto;
+    padding: 1rem;
+  }
+
+  .news-sidebar {
+    top: auto;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    width: auto;
+    height: 40vh;
+    padding: 1rem;
+  }
+
+  .news-sidebar h1 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .news-list {
+    gap: 1rem;
+  }
+
+  .article-overlay {
+    padding: 1.5rem;
+    width: 92%;
+  }
+
+  .article-title {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .article-description {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .back-button {
+    top: 0.75rem;
+    right: 0.75rem;
+  }
+}
