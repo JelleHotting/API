@@ -1,15 +1,18 @@
+import { getAIEngine } from "../utils/aiEngine.js";
+
 /**
  * Interface with Chrome's LanguageModel API to extract locations from news articles.
  * @param {Array} articles - The list of news articles.
  * @param {L.Map} map - The Leaflet map instance to add circles to.
  */
 export async function extractLocations(articles, map) {
-  if (!("LanguageModel" in self)) {
-    console.warn("LanguageModel not found in self. Check flags.");
+  const engine = await getAIEngine();
+  if (!engine) {
+    console.warn("No AI engine available.");
     document
       .querySelectorAll(".location-text")
       .forEach(
-        (el) => (el.textContent = "API not found, use Chrome with flags."),
+        (el) => (el.textContent = "AI not supported on this device/browser"),
       );
     return;
   }
@@ -17,8 +20,6 @@ export async function extractLocations(articles, map) {
   const newsItems = document.querySelectorAll(".news-item");
 
   try {
-    let session = null;
-
     for (let i = 0; i < articles.length; i++) {
       const title = articles[i].title || "";
       const description = articles[i].description || "";
@@ -39,40 +40,10 @@ export async function extractLocations(articles, map) {
         };
         coords = parsed.coords;
       } else {
-        // Alleen sessie aanmaken als we echt de AI nodig hebben
-        // Bron: Google DeepMind. (2026). Antigravity [Large language model]. https://deepmind.google/
-        // Prompt: "Kan je een system prompt schrijven voor de lokale Chrome AI die nieuws headlines analyseert en altijd een strict JSON object teruggeeft met country, city en sentiment?"
-        if (!session) {
-          session = await LanguageModel.create({
-            initialPrompts: [
-              {
-                role: "system",
-                content: `You are a location and sentiment extractor. Your task is to identify the PRIMARY location where the event in a news article took place and determine the overall positivity of the event.
-
-Return ONLY a raw JSON object (no markdown, no explanation) with these keys:
-- "country": the country where the event took place (in English)
-- "city": the city or region where the event took place (in English)
-- "sentiment": the overall positivity of the event ("positive", "neutral", or "negative")
-
-Rules:
-- If multiple locations are mentioned, pick the one where the core event happened
-- If only a country is known, set "city" to null
-- If the location is truly unknown or the event is global in nature, use "Global" for country and null for city
-- Country must be a recognized country name in English (e.g. "Netherlands", not "Dutch" or "Holland")
-
-Example output for global: {"country": "Global", "city": null, "sentiment": "neutral"}
-Example output for local: {"country": "France", "city": "Paris", "sentiment": "negative"}`,
-              },
-            ],
-          });
-        }
         const query = `Headline: ${title}\nDescription: ${description}`;
-        const result = await session.prompt(query);
-
+        
         try {
-          const jsonMatch = result.match(/\{.*\}/s);
-          if (!jsonMatch) throw new Error("No JSON found");
-          data = JSON.parse(jsonMatch[0]);
+          data = await engine.analyze(query);
 
           if (data && data.country && data.country !== "Global") {
             coords = await getCoordinates(data.city, data.country);
@@ -93,7 +64,7 @@ Example output for local: {"country": "France", "city": "Paris", "sentiment": "n
             console.warn("Failed to save to cache:", e);
           }
         } catch (e) {
-          console.warn("Failed to parse AI location:", result, e);
+          console.warn("Failed to parse AI location:", e);
           continue;
         }
       }
