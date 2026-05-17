@@ -47,8 +47,17 @@ class TransformersProvider {
   async init() {
     try {
       // Lazy-load Transformers.js only when needed
-      const { pipeline } = await import('@xenova/transformers');
+      const { pipeline, env } = await import('@xenova/transformers');
+      
+      // Force remote loading to prevent 404s on local server
+      env.allowLocalModels = false;
+      env.remoteHost = 'https://huggingface.co';
+      env.remotePathTemplate = '{model}/resolve/{revision}/';
+
+      // Load small models for speed and memory efficiency
       this.classifier = await pipeline('sentiment-analysis', 'Xenova/distilbert-base-uncased-finetuned-sst-2-english');
+      this.ner = await pipeline('token-classification', 'Xenova/bert-base-NER');
+      
       return true;
     } catch (e) {
       console.error("Transformers.js initialization failed:", e);
@@ -59,15 +68,36 @@ class TransformersProvider {
   /**
    * Analyzes text using Transformers.js
    * @param {string} text - The text to analyze
-   * @returns {Promise<Object>} Analyzed data with sentiment and default location
+   * @returns {Promise<Object>} Analyzed data with sentiment and extracted location
    */
   async analyze(text) {
-    const sentimentResult = await this.classifier(text);
-    return {
-      country: "Global",
-      city: null,
-      sentiment: sentimentResult[0].label.toLowerCase()
-    };
+    try {
+      const [sentimentResult, nerResult] = await Promise.all([
+        this.classifier(text),
+        this.ner(text)
+      ]);
+
+      // Extract locations from NER results
+      // LOC = Location, GPE = Geopolitical Entity
+      const locations = nerResult
+        .filter(entity => entity.entity === 'B-LOC' || entity.entity === 'I-LOC' || entity.entity === 'B-GPE' || entity.entity === 'I-GPE')
+        .map(entity => entity.word.replace('##', '')) // Handle subword tokens
+        .join(' ')
+        .split(' ')
+        .filter(word => word.length > 1);
+
+      // Simple heuristic: first group of location words is the city/country
+      const primaryLocation = locations[0] || "Global";
+
+      return {
+        country: primaryLocation,
+        city: null,
+        sentiment: sentimentResult[0].label.toLowerCase()
+      };
+    } catch (e) {
+      console.warn("Transformers.js analysis failed:", e);
+      return { country: "Global", city: null, sentiment: "neutral" };
+    }
   }
 }
 
