@@ -1,7 +1,7 @@
 ![Banner](readmeImages/image.png)
 
 > [!WARNING]
-> Dit project werkt alleen op chrome doormiddel van het lokale AI model van Chrome
+> Dit project werkt het beste in Chrome met het lokale AI model van Google, hoewel het ook in andere browsers werkt zal de locatie niet altijd accuraat zijn.
 
 ## Leerdoelen bij deze opdracht
 
